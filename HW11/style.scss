@@ -78,11 +78,107 @@ header{
         display: flex;
     }
    &__skils{
-       margin-left: 150px;
-       display: flex;
-       p{
-        @include font_text(black,18px,400 );
-           margin-right: 100px;
-       }
+    @include font_text(black,18px,600 );
+    display: flex;
+    flex-direction: column;
+    // align-items: flex-end;
+    margin-left: 170px;
+    p{
+        line-height: 35px;
+    }
+    .glob_profl{
+        margin-bottom: 35px;
+    }
+   }
+   &__status{
+    @include font_text(black,18px,400 );
+    margin-left: 170px;
+    width: 500px;
+    p{
+        line-height: 42px;
+    
+    } 
+    .progress {
+        background-color: #F5D6AB;
+        border-radius: 0px;
+        height: 24px;
+
+    }
+    .progress-bar {
+        background-color: #C66C49;
+        border-radius: 0px;
+    }
+     .glob_profl{
+    margin-bottom: 35px;
    }
 }
+}
+
+.Portfolio_block{
+ padding: 70px 100px 60px 100px;
+ @include font_text(black,18px,400 );
+    &__headtext{
+    @include font_text(black,24px,700 );
+    margin-bottom: 50px;
+    }
+    &__textt_and_img{
+     display: flex;
+     }
+     &__maintext{
+     width: 370px;
+        .text_research{
+         margin-bottom: 50px;
+         @include font_text(black,18px,600 );
+     }
+    }
+    &__img_port{
+  margin-top: 80px;  
+  margin-left: 245px; 
+    }
+    &__arrow{
+        svg{
+            width: 70px;
+            height: 25px;
+        }
+    }
+}
+footer{
+    @include font_text(black,18px,400 );
+    width: 100%;
+    background-color: #FFFAF2;
+  padding-bottom: 100px;
+}
+.footer_header_text{
+    padding-top: 50px;
+    @include font_text(black,24px,600 );
+    p{
+       margin-left: 195px; 
+    }
+}
+.footer_column{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer_arrow{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    margin-top: 30px;
+    svg{
+        width: 70px;
+        height: 25px;
+    }
+}
+@media screen and (max-width:380px) {
+    .yellow_block__img_and_text{
+display: flex;
+flex-direction: column;
+
+    }
+    .yellow_block__tablle{
+    display: flex;
+    flex-direction: row;
+}
+}
+    
