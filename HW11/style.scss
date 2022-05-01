@@ -23,6 +23,9 @@ header{
 }
 .contaainer{
     width: 100%;
+    // height: 275px;
+    // display: flex;
+    // justify-content: center;
     &__head{
         display: flex;
         justify-content: space-between;
@@ -35,12 +38,16 @@ header{
      }
         &__main{
             display: flex;
-            @include font_text(white,24px,400);
-            // margin: 20px;
-            p{
+            a{ 
+                @include font_text(white,24px,400);
+                text-decoration:none;
                 margin: 20px;
             }
+             a:hover{
+        color: blue;
         }
+        
+    }
     }
     &__main{
         margin-top: 180px;
@@ -50,10 +57,11 @@ header{
             font-size: 24px;
         }
         &__minitext{
-            font-size: 18px;
+            @include font_text(white,18px,400);
             line-height: 150px;
         }
     }
+   
 }
 .white_block{
     margin: 100px;
@@ -74,6 +82,9 @@ header{
             img{
             width: 300px;
             }
+    &__tablle{
+        display: flex;
+    }
     &__img_and_text{
         display: flex;
     }
@@ -132,8 +143,20 @@ header{
      }
     }
     &__img_port{
-  margin-top: 80px;  
-  margin-left: 245px; 
+        width: 635px;
+        display: flex;
+        margin-top: 65px; 
+        margin-left: 230px; 
+        &__group1{
+            width: 350px;
+            margin-right: 30px;
+         img{
+             margin: 20px;
+         }
+        }
+        // &__group2{
+        //     float: left;
+        // }
     }
     &__arrow{
         svg{
@@ -171,14 +194,57 @@ footer{
     }
 }
 @media screen and (max-width:380px) {
-    .yellow_block__img_and_text{
-display: flex;
-flex-direction: column;
+// //     .yellow_block__img_and_text{
+// // display: flex;
+// // flex-direction: column;
 
-    }
-    .yellow_block__tablle{
+//     .yellow_block__tablle{
+//     display: flex;
+//     flex-direction: row;
+//     }
+header{
+    background-image:url('../HW11/image/bg_mini2.png'), url('../HW11/image/bg_mini.png'); ;
+    width: 100%;
+    height: 275px;
+
+}
+.contaainer{
+    width: 100%;
+    height: 275px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__head{
+        margin: 0;
+        margin-top: 30px;
+    }
+    &__main{
+        margin: 0;
+        // display: flex;
+        // justify-content: center;
+        @include font_text(white,13px,400 );
+        &__minitext{
+margin: 0;
+        }
+    }
 }
+.contaainer__head__main{
+    display: none;
 }
+
+.white_block{
+    margin: 20px;
+    &__about{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+}
+
+
+
+
     
